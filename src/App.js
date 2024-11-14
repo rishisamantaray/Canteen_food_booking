@@ -20,7 +20,7 @@ function App() {
     setIsVerified(false); // reset verification status
 
     // Send the ticket info and mobile number to the backend to send SMS
-    axios.post('http://localhost:5000/book-ticket', {
+    axios.post('https://canteen-food-booking-backend.onrender.com:5000/book-ticket', {
       mobileNumber: mobileNumber,  // Ensure this value is set in a form
       ticketId: generatedTicket,
       foodItem: order.foodItem,
